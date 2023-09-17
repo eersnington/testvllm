@@ -4,7 +4,6 @@ from vllm import LLM, SamplingParams
 app = Flask(__name__)
 
 model = "lmsys/vicuna-13b-v1.3"
-sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 llm = LLM(model=model)
 
 system_prompt = "A chat between a curious user and an artificial intelligence assistant. \nThe assistant gives helpful, detailed, and polite answers to the user's questions."
