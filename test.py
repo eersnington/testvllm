@@ -1,7 +1,7 @@
 from vllm import LLM, SamplingParams
 import time
 model = "lmsys/vicuna-13b-v1.3"
-llm = LLM(model=model, tensor_parallel_size=2)
+llm = LLM(model=model)
 
 prompt = "What is the difference between nuclear fission and nuclear fusion."
 sampling_params = SamplingParams(
